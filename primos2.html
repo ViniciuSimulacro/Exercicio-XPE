@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<header>
+        <script>
+            function verificaNumeroPrimo(numero){
+                var result = 0
+                while (result < 2){
+                    if (numero == 1){
+                        result +=1
+                    }if (numero == 2){
+                        result -=2
+                    }if (numero == 3){
+                        result -=2
+                    }if (numero == 5){
+                        result -=2
+                    }if (numero == 7){
+                        result -=2
+                    }if (numero / numero == 1){
+                        result +=1
+                    }if (numero / 1 == numero){
+                        result +=1
+                    }if (numero % 2 == 0 ){
+                        result += 1
+                    }if (numero % 3 == 0 ){
+                        result += 1
+                    }if (numero % 5 == 0){
+                        result += 1
+                    }if (numero % 7 == 0){
+                        result += 1
+                    }
+                    
+                    
+
+                    if (result <= 2){
+                        console.log(`O numero ${numero} é primo`)
+                        break
+                    }else{
+                        console.log(`O numero ${numero} não é primo`)
+                        break
+                    }
+                    };
+                };
+                
+
+            
+
+            verificaNumeroPrimo(997)
+
+        </script>
+        <title>Document</title>
+</header>
+<body>
+    <h1>Olá Mundo!</h1>    
+</body>
+</html>
