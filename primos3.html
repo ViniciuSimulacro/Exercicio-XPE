@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Primos Refatorando</title>
+    <style>
+        html{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<header>
+    <script>
+        
+        function validaNumeroPrimo(numero){
+            var cont = 0;
+            var divisor = 1;
+            for(let i = 0; i < numero; i++){
+                
+                var resultado = numero % divisor
+                if (resultado == 0){
+                    cont += 1
+                    console.log(`O numero é ${numero}, o divisor é ${divisor} e o resultado é ${resultado}!` )
+                    
+
+                }if (cont > 2){
+                    console.log(`O numero ${numero} não é primo`)
+                    break
+                    
+                }if (divisor > numero && cont < 2){
+                    console.log(`O numero ${numero} é primo`)
+                    break
+                    }
+                
+                    
+                divisor += 1
+                }
+            };
+        
+
+        
+        validaNumeroPrimo(25)
+    </script>
+</header>
+<body>
+    <h1>Treinando Loop em JavaScript</h1>
+</body>
+</html>
