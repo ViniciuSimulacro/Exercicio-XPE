@@ -20,12 +20,10 @@
                 var resultado = numero % divisor
                 if (resultado == 0){
                     cont += 1
-                    console.log(`O numero é ${numero}, o divisor é ${divisor} e o resultado é ${resultado}!` )
-                    console.log(cont)
-                    console.log(divisor)
+                    
 
-                }if (cont > 2){
-                    console.log(`O numero ${numero} não é primo`)
+                }if (numero == 1 || cont > 2){
+                    //console.log(`O numero ${numero} não é primo`)
                     break
                     
                 }if (divisor > numero && cont <= 2){
@@ -38,9 +36,11 @@
                 }
             };
         
+        var num = prompt('Digite um numero para saber os numeros primos até ele: ');
+        for (let i = 1; i <= num ; i++){  
+            validaNumeroPrimo(i)
+        };
 
-        
-        validaNumeroPrimo(17)
     </script>
 </header>
 <body>
